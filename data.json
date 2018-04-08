@@ -1,0 +1,34 @@
+ {
+     "products": [{
+             "id": 1,
+             "name": "Apple MacBook Pro ",
+             "price": 1000,
+             "image": "pop product1.png"
+         },
+         {
+             "id": 2,
+             "name": "Apple MacBook Pro 2",
+             "price": 2000,
+             "image": "pop product2.png"
+         },
+         {
+             "id": 3,
+             "name": "Apple MacBook Pro 3",
+             "price": 3000,
+             "image": "pop product3.png"
+         },
+         {
+             "id": 4,
+             "name": "pop product4.png",
+             "price": 4000,
+             "image": "4.jpg"
+         },
+
+         {
+             "id": 5,
+             "name": "Apple MacBook Pro 5",
+             "price": 5000,
+             "image": "pop product5.png"
+         }
+     ]
+ }

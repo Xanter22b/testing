@@ -16,7 +16,7 @@ var timer;
                 }   
         slider.style.left = left + 'vw';
         autoSlider();
-            }, 3000);
+            }, 4000);
     }
 
 

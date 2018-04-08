@@ -7,7 +7,10 @@
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+	<script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+	
 	<script src="main.js" defer></script> 
+	<script type="text/javascript" src="slick/slick.min.js"></script>
 
 </head>
 
@@ -51,7 +54,60 @@
 </section>
 <section id="team"></section>
 <section id="contact_us"></section>
-<section id="footer"></section>
+
+
+
+
+
+
+
+
+<section id="footer">
+
+	<div id="map"></div>
+    <script>
+        function initMap() {
+            var uluru = {
+                lat: 49.5685341,
+                lng: 34.5853751
+            };
+            var map = new google.maps.Map(document.getElementById('map'), {
+                zoom: 4,
+                center: uluru
+            });
+            var marker = new google.maps.Marker({
+                position: uluru,
+                map: map
+            });
+
+            var contentString = '<div id="content">' +
+                '<div id="siteNotice">' +
+                '</div>' +
+                '<h1 id="firstHeading" class="firstHeading">Very Important Message</h1>' +
+                '<div id="bodyContent">' +
+                '<p>Information</p>' +
+                '</div>' +
+                '</div>';
+
+            var infowindow = new google.maps.InfoWindow({
+                content: contentString
+            });
+
+            var marker = new google.maps.Marker({
+                position: uluru,
+                map: map,
+                title: 'Uluru (Ayers Rock)'
+            });
+            marker.addListener('click', function () {
+                infowindow.open(map, marker);
+            });
+
+        }
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key= AIzaSyAjp0JQWyqGhKruN-oVqqAPQa0Q0Zr89Vo&callback=initMap" async
+        defer></script>
+
+</section>
 	
 
 </body>

@@ -5,12 +5,14 @@
 	<title>Exam</title>
 	<link rel="stylesheet" type="text/css" href="css/normalize.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
-	<link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet">
+    <link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-	<script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
-	
+	<script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>	
 	<script src="main.js" defer></script> 
-	<script type="text/javascript" src="slick/slick.min.js"></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
+    
 
 </head>
 
@@ -19,98 +21,194 @@
 <section class="header">
 		<nav class="header_nav">
 			
-				<div class="logo">LOGO</div>
+				<div class="logo">BOUNCY</div>
 				<ul class="header_menu">
-					<li id="portfolio_button">portfolio</li>
-					<li id ="team_button"> team</li>
-					<li id="contact_us_button"> contact us</li>
-					
+                   <div class ="button_border">
+                    <li id="hello_button">Hello</li></div>
+					<li id="portfolio_button">Portfolio</li>
+					<li id ="team_button"> Team</li>
+					<li id="contact_us_button"> Contact</li>	
 				</ul>
 			</nav>
-			<button id="button_down">down</button>
-
+            
+            <div id="button_down"> </div>
+            <div class="slogans">
+                <h1 class="header_title">We are code cafe</h1>
+                <span class="header_slogan">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis</br> praesentium voluptatum</span>
+            </div>
 	<div id="header_slider">
-
-
-		
 		<div id="header_slider_roll">
-			
-			<img class="header_slider_background" src="./img/background1.jpg" alt="11">
+			<img class="header_slider_background" src="./img/background_image.png" alt="11">
 			<img class="header_slider_background" src="./img/background2.jpg" alt="22">
-			<img class="header_slider_background" src="./img/background3.jpg" alt="33">
-			
-		 </div> 
-		 
+			<img class="header_slider_background" src="./img/background3.jpg" alt="33">		
+		 </div> 	 
 	</div>
-	
-
 
 
 </section>
+
 <section id="portfolio">
-<h1 class="portfolio_title">Portfolio</h1>
+<div class = "portfolio_titles">
+    <div class="portfolio_main_title">The portfolio</div>
+    <div class="portfolio_slogan">At vero eos et accusamus et iusto odio dignissimos ducimus qui </br> blanditiis praesentium</div>
 
+        <ul class="portfolio_nav">
+            <li>All Works</li>
+            <li>Print</li>
+            <li>Branding</li>
+            <li>Web</li>
+            <li>HTML</li>     
+        </ul>
+   
+</div>
+<div class="portfolio_images">
+    
+    <div class="portfolio_images_col">
+            <span class=" portfolio_image1"></span>
+            <span class=" portfolio_image2"></span>
+            <span class=" portfolio_image3"></span>
+    </div>
 
-</section>
-<section id="team"></section>
-<section id="contact_us"></section>
+    <div class="portfolio_images_col">
+            <span class=" portfolio_image4"></span>
+            <span class=" portfolio_image5"></span>
+            <span class=" portfolio_image6"></span>
+    </div>
 
-
-
-
-
-
-
-
-<section id="footer">
-
-	<div id="map"></div>
-    <script>
-        function initMap() {
-            var uluru = {
-                lat: 49.5685341,
-                lng: 34.5853751
-            };
-            var map = new google.maps.Map(document.getElementById('map'), {
-                zoom: 4,
-                center: uluru
-            });
-            var marker = new google.maps.Marker({
-                position: uluru,
-                map: map
-            });
-
-            var contentString = '<div id="content">' +
-                '<div id="siteNotice">' +
-                '</div>' +
-                '<h1 id="firstHeading" class="firstHeading">Very Important Message</h1>' +
-                '<div id="bodyContent">' +
-                '<p>Information</p>' +
-                '</div>' +
-                '</div>';
-
-            var infowindow = new google.maps.InfoWindow({
-                content: contentString
-            });
-
-            var marker = new google.maps.Marker({
-                position: uluru,
-                map: map,
-                title: 'Uluru (Ayers Rock)'
-            });
-            marker.addListener('click', function () {
-                infowindow.open(map, marker);
-            });
-
-        }
-    </script>
-    <script src="https://maps.googleapis.com/maps/api/js?key= AIzaSyAjp0JQWyqGhKruN-oVqqAPQa0Q0Zr89Vo&callback=initMap" async
-        defer></script>
+    <div class="portfolio_images_col">
+            <span class=" portfolio_image7"></span>
+            <span class=" portfolio_image8"></span>
+            <span class=" portfolio_image9"></span>
+    </div>
+    
+    <div class="portfolio_images_col">
+            <span class=" portfolio_image10"></span>
+            <span class=" portfolio_image11"></span>
+            <span class=" portfolio_image12"></span>
+    </div>
+      
+</div>
 
 </section>
-	
+
+
+
+<section id="team">
+    <div class="team_titles">
+        <div class="team_main_title">THE TEAM</div>
+        <div class="team_slogan">At vero eos et accusamus et iusto odio dignissimos ducimus qui </br> blanditiis praesentium</div>
+    </div>
+    <div class="team_member">
+        <div class="team_member_photo"></div>
+        <div class="team_member_information">
+            <p class="member_name">Abdullah Noman</p>
+            <p class="member_position">Creative Director, Code Cafe</p>
+            <p class="member_info">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium. At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium. At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium. At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium. At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium.</p>
+        </div>
+    </div>
+    <div class="team_paginator">
+        <span class="paginator_button"></span>
+        <span class="paginator_button"></span>
+        <span class="paginator_button"></span>
+    </div>
+</section>
+
+
+<section class="team_cta">
+    <p class="team_cta_slogan">Already Loved Us? Let’s talk!</p>
+    <div class="team_cta_button">Contact US</div>
+</section>
+
+
+<section class="testimonials">
+        <div class="testimonials_titles">
+                <div class="testimonials_main_title">Testimonials</div>
+                <div class="testimonials_slogan">At vero eos et accusamus et iusto odio dignissimos ducimus qui </br> blanditiis praesentium</div>
+            </div>
+            <div class="feedback">
+                <div class="feedback_form">
+                    <div class="feedback_image"></div>
+                    <div class="feedback_info">
+                        <p class="feedback_info_text">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia.</p>
+                        <p class="feedback_info_name">PARTHO</p>
+                        <p class="feedback_info_position">FOUNDER, ARTWAYS BD</p>
+                    </div>
+                </div>
+
+                <div class="feedback_paginator">
+                        <span class="feedback_paginator_button"></span>
+                        <span class="feedback_paginator_button"></span>
+                        <span class="feedback_paginator_button"></span>
+                </div>
+            </div>
+</section>
+
+
+<section id="contact_us">
+
+    <div class="contact_us_form">
+            <div class="contact_us_form_title">Contact US</div>
+            <div class="contact_us_form_slogan">At vero eos et accusamus et iusto odio dignissimos ducimus qui </br> blanditiis praesentium</div>
+    </div>
+
+<div id="map"></div>
+<script>
+    function initMap() {
+        var uluru = {
+            lat: 49.5685341,
+            lng: 34.5853751
+        };
+        var map = new google.maps.Map(document.getElementById('map'), {
+            zoom: 4,
+            center: uluru
+        });
+        var marker = new google.maps.Marker({
+            position: uluru,
+            map: map
+        });
+
+        var contentString = '<div id="content">' +
+            '<div id="siteNotice">' +
+            '</div>' +
+            '<h1 id="firstHeading" class="firstHeading">Very Important Message</h1>' +
+            '<div id="bodyContent">' +
+            '<p>Information</p>' +
+            '</div>' +
+            '</div>';
+
+        var infowindow = new google.maps.InfoWindow({
+            content: contentString
+        });
+
+        var marker = new google.maps.Marker({
+            position: uluru,
+            map: map,
+            title: 'Uluru (Ayers Rock)'
+        });
+        marker.addListener('click', function () {
+            infowindow.open(map, marker);
+        });
+
+    }
+</script>
+<script src="https://maps.googleapis.com/maps/api/js?key= AIzaSyAjp0JQWyqGhKruN-oVqqAPQa0Q0Zr89Vo&callback=initMap" async
+    defer></script>
+
+    <div class="footer">
+        <p class="company_name">BOUNCY</p>
+        <p class="copyright">Copyright 2015. All rights Reserved</p>
+        <div class="social_networks">
+                <span class="social_networks_icon facebook"></span>
+                <span class="social_networks_icon twitter"></span>
+                <span class="social_networks_icon linkedin"></span>
+                <span class="social_networks_icon instagram"></span>
+                <span class="social_networks_icon vimeo"></span>
+
+        </div>
+    </div>
+
+</section>
+
 
 </body>
-
-
 </html>
